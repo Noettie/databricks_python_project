@@ -1,0 +1,62 @@
+{
+  "terraform": {
+    "required_providers": {
+      "databricks": {
+        "source": "databricks/databricks",
+        "version": "1.39.0"
+      }
+    }
+  },
+  "provider": {
+    "databricks": {}
+  },
+  "resource": {
+    "databricks_job": {
+      "demo_project_job": {
+        "deployment": {
+          "kind": "BUNDLE",
+          "metadata_file_path": "/Users/nothando.ndlovu@greyfly.ai/.bundle/demo_project/dev/state/metadata.json"
+        },
+        "edit_mode": "UI_LOCKED",
+        "email_notifications": {
+          "on_failure": [
+            "nothando.ndlovu@greyfly.ai"
+          ]
+        },
+        "format": "MULTI_TASK",
+        "job_cluster": [
+          {
+            "job_cluster_key": "job_cluster",
+            "new_cluster": {
+              "autoscale": {
+                "max_workers": 4,
+                "min_workers": 1
+              },
+              "node_type_id": "Standard_D3_v2",
+              "spark_version": "13.3.x-scala2.12"
+            }
+          }
+        ],
+        "max_concurrent_runs": 4,
+        "name": "[dev nothando_ndlovu] demo_project_job",
+        "schedule": {
+          "pause_status": "PAUSED",
+          "quartz_cron_expression": "44 37 8 * * ?",
+          "timezone_id": "Europe/Amsterdam"
+        },
+        "tags": {
+          "dev": "nothando_ndlovu"
+        },
+        "task": [
+          {
+            "job_cluster_key": "job_cluster",
+            "notebook_task": {
+              "notebook_path": "/Users/nothando.ndlovu@greyfly.ai/.bundle/demo_project/dev/files/src/notebook"
+            },
+            "task_key": "notebook_task"
+          }
+        ]
+      }
+    }
+  }
+}

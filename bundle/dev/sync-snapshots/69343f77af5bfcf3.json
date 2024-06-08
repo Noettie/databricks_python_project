@@ -1,0 +1,38 @@
+{
+  "version": "v1",
+  "host": "https://adb-2396132839216422.2.azuredatabricks.net",
+  "remote_path": "/Users/nothando.ndlovu@greyfly.ai/.bundle/demo_project/dev/files",
+  "last_modified_times": {
+    ".gitignore": "2024-06-07T16:54:10.184389908-07:00",
+    ".vscode/__builtins__.pyi": "2024-06-07T16:54:10.184389908-07:00",
+    ".vscode/extensions.json": "2024-06-07T16:54:10.184389908-07:00",
+    ".vscode/settings.json": "2024-06-07T16:54:10.184389908-07:00",
+    "README.md": "2024-06-07T16:54:10.184389908-07:00",
+    "databricks.yml": "2024-06-07T16:54:10.184389908-07:00",
+    "fixtures/.gitkeep": "2024-06-07T16:54:10.184389908-07:00",
+    "resources/demo_project_job.yml": "2024-06-07T16:54:10.184389908-07:00",
+    "src/notebook.ipynb": "2024-06-07T16:54:10.184389908-07:00"
+  },
+  "local_to_remote_names": {
+    ".gitignore": ".gitignore",
+    ".vscode/__builtins__.pyi": ".vscode/__builtins__.pyi",
+    ".vscode/extensions.json": ".vscode/extensions.json",
+    ".vscode/settings.json": ".vscode/settings.json",
+    "README.md": "README.md",
+    "databricks.yml": "databricks.yml",
+    "fixtures/.gitkeep": "fixtures/.gitkeep",
+    "resources/demo_project_job.yml": "resources/demo_project_job.yml",
+    "src/notebook.ipynb": "src/notebook"
+  },
+  "remote_to_local_names": {
+    ".gitignore": ".gitignore",
+    ".vscode/__builtins__.pyi": ".vscode/__builtins__.pyi",
+    ".vscode/extensions.json": ".vscode/extensions.json",
+    ".vscode/settings.json": ".vscode/settings.json",
+    "README.md": "README.md",
+    "databricks.yml": "databricks.yml",
+    "fixtures/.gitkeep": "fixtures/.gitkeep",
+    "resources/demo_project_job.yml": "resources/demo_project_job.yml",
+    "src/notebook": "src/notebook.ipynb"
+  }
+}
